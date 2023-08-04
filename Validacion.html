@@ -7,6 +7,7 @@
     <link rel="icon" href="img/icono.png" class="icon_pes">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -23,69 +24,65 @@
         }
     </style>
     <header>
-        <h1>¿Que son los formularios?</h1>
+        <h1>Formulario  validacion</h1>
     </header>
 
     <div class="contenido">
-        <form class="form-basico" action="#">
+        <form class="form-validacion" action="#">
         <!--contenedor para el formulario-->
         <div class="formulario">
             <div class="titulo">
                 <h1>Formulario</h1>
             </div>
             <div class="entrada">
-                <label>tipo texto</label>
+                <label>Nombre</label>
+                <span>
                 <input type="text" placeholder="Nombre Completo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                  </svg>
+                </span>
             </div>
             <div class="entrada">
-                <label>tipo email</label>
+                <label>Email</label>
                 <input type="email" placeholder="Ejemplo@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                  </svg>
             </div>
             <div class="entrada">
-                <label for=""> Tipo fecha</label>
-                <input type="date" >
-            </div>
-            <div class="entrada">
-                <label>tipo select</label>
-                <select>
-                    <option value="">ninguna</option>
-                    <option value="">opccion 1</option>
-                    <option value="">opccion 2</option>
-                    <option value="">opccion 3</option>
-                    <option value="">opccion 4</option>
-                </select>
-            </div>
-            <div class="entrada">
-                <label for=""> Entrada tipo contraseña</label>
+                <label for="">Contraseña</label>
                 <input type="password" placeholder="Example123">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                  </svg>
             </div>
 
             <div class="entrada">
-                <label>Entrada de caja de verificacion</label>
+                <label>¿Eres gey?</label>
                 <div class="opciones">
                     <div>
                         <label>
                             <input type="radio" name="radio">
-                            <span>Opcion 1</span>
+                            <span>Si</span>
                         </label>
                     </div>
                     <div>
                         <label>
                             <input type="radio" name="radio">
-                            <span>Opcion 2</span>
+                            <span>No</span>
                         </label>
                     </div>
                     <div>
                         <label>
                             <input type="radio" name="radio">
-                            <span>Opcion 3</span>
+                            <span>Talvez 🤨</span>
                         </label>
                     </div>
                 </div>
-            </div>
-            <div class="entrada">
-                <label>Entrada tipo caja +300caracteres</label>
-                <textarea name="textarea"></textarea>
             </div>
             <div class="entrada">
                 <label>Entrada tipo verificacion</label>
@@ -102,10 +99,10 @@
     <div class="menu">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="basico.html" class="active">Basico</a></li>
+            <li><a href="basico.html">Basico</a></li>
             <li><a href="registro.html">Registro</a></li>
             <li><a href="acceso.html">Iniciar sesion</a></li>
-            <li><a href="validacion.html">Validacion</a></li>
+            <li><a href="validacion.html" class="active">Validacion</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
         </ul>
     </div>

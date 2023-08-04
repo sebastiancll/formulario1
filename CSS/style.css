@@ -90,18 +90,294 @@ ul li{
 }
 
 
-/*ESTILO FORMULARIO BASICO*/
+/*ESTILO FORMULARIO V.form-validacion*/
 
-.form-basico{
+.form-validacion{
     max-width:  640px;
     margin: 0 auto;
     padding: 55px;
     box-sizing: border-box;
-    background-color: rgb(194, 194, 194);
-    box-shadow: 0 1px 3px 0 rgb(94, 94, 94);
+    background-color: rgba(255, 81, 0, 0.589);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
     font-family: 'Grandstander', cursive;
     text-align: center;
 }
 .entrada {
-    
+    text-align: left;
+    margin-bottom: 22px;
 }
+
+.titulo {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(19, 19, 59);
+    border-top: 2px solid rgb(19, 19, 59);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.form-validacion .entrada label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #000000;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-validacion input[type=text],
+.form-validacion input[type=email], 
+.form-validacion input[type=password]{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+   padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.form-validacion input[type=radio],
+.form-validacion input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-validacion input[type=checkbox] {
+    margin-top: 13px;
+}
+
+.form-validacion select {
+    background-color: #ffffff;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-validacion textarea {
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    height: 100px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+
+.opciones {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div {
+    margin-top: 10px;
+}
+
+.opciones label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.opciones input {
+    width: auto;
+}
+
+.form-validacion input[type=button] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-validacion {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-validacion .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-validacion .titulo {
+        margin-bottom: 50px;
+    }
+    .form-validacion .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-validacion select {
+        width: 240px;
+    }
+    .form-validacion input[type=checkbox] {
+        margin-top: 0;
+    }
+    .form-validacion .opciones>div {
+        margin: 0 0 10px;
+    }
+    .form-validacion button {
+        margin: 0;
+    }
+}
+
+/*Formulario validacion*/
+
+.form-validacion{
+    max-width:  640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: rgba(255, 81, 0, 0.589);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+}
+.entrada {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.titulo {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(19, 19, 59);
+    border-top: 2px solid rgb(19, 19, 59);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.form-validacion .entrada label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #000000;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.form-validacion input[type=text],
+.form-validacion input[type=email], 
+.form-validacion input[type=password]{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.form-validacion input[type=radio],
+.form-validacion input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-validacion input[type=checkbox] {
+    margin-top: 13px;
+}
+
+
+
+.opciones {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div {
+    margin-top: 10px;
+}
+
+.opciones label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.opciones input {
+    width: auto;
+}
+
+.form-validacion input[type=button] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-validacion {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-validacion .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-validacion .titulo {
+        margin-bottom: 50px;
+    }
+    .form-validacion .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-validacion select {
+        width: 240px;
+    }
+    .form-validacion input[type=checkbox] {
+        margin-top: 0;
+    }
+    .form-validacion .opciones>div {
+        margin: 0 0 10px;
+    }
+    .form-validacion button {
+        margin: 0;
+    }
+}
+
