@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo 2</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    
+    <p>Call a function which performs a calculation and returns the result:</p>
+    
+    <form class="multiplicar">
+    <label>digite un numero</label>
+    <input type="text"  id="num1">
+    <label>digite un numero</label>
+    <input type="text"  id="num2">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="text" id="resultado">
+    </form>
+    
+    
+    <script>
+
+    function multiplicar() {
+    let p1= document.getElementById("num1").value;
+    let p2= document.getElementById("num2").value;
+    result = p1*p2;
+    document.getElementById("resultado").value = result;
+    }
+
+    </script>
+    
+    </body>
+</html>

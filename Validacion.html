@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
+<!--sweedtalert-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--ruta archivo js-->
+<script src="JS/validar.js"></script>
 </head>
 <script>
     //funcion mensaje emergente//
@@ -28,16 +32,16 @@
     </header>
 
     <div class="contenido">
-        <form class="form-validacion" action="#">
+        <form class="form-validacion" name="formulario" action="#" onsubmit="return validar()">
         <!--contenedor para el formulario-->
-        <div class="formulario">
-            <div class="titulo">
+        <div class="formulario-val">
+            <div class="titulo-val">
                 <h1>Formulario</h1>
             </div>
             <div class="entrada">
                 <label>Nombre</label>
-                <span>
-                <input type="text" placeholder="Nombre Completo">
+                <input type="text" class="campo" placeholder="Nombre Completo" required>
+                <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
@@ -46,19 +50,23 @@
             </div>
             <div class="entrada">
                 <label>Email</label>
-                <input type="email" placeholder="Ejemplo@gmail.com">
+                <input type="email" class="campo" placeholder="Ejemplo@gmail.com" required>
+                <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                   </svg>
+                </span>
             </div>
             <div class="entrada">
                 <label for="">Contraseña</label>
-                <input type="password" placeholder="Example123">
+                <input type="password" class="campo" placeholder="Example123" required>
+                <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                   </svg>
+                </span>
             </div>
 
             <div class="entrada">
@@ -66,30 +74,29 @@
                 <div class="opciones">
                     <div>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio"  name="opc" value="si">
                             <span>Si</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="opc" value="no">
                             <span>No</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="opc" value="talvez">
                             <span>Talvez 🤨</span>
                         </label>
                     </div>
                 </div>
             </div>
             <div class="entrada">
-                <label>Entrada tipo verificacion</label>
-                <input type="checkbox"> <label>Terminos y condiciones</label>
+                <input type="checkbox" name="condiciones" value="aceptado">Terminos y condiciones
             </div>
             <div class="boton">
-                <input type="button" value="Enviar" onclick="enviar()">
+                <input type="submit" value="Enviar" onclick="enviar()">
             </div>
         </div>
     </form>
